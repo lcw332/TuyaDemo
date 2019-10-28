@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gantch.www">
+
+
+
+    <!-- sdcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="false" />
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:required="false" />
+    <!-- added from 2.7.2 -->
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"
+        android:required="false" />
+
+    <application
+        android:name=".DemoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--涂鸦SDK-->
+        <meta-data
+            android:name="TUYA_SMART_APPKEY"
+            android:value="txdwkkqj947qpsd99pky" />
+        <meta-data
+            android:name="TUYA_SMART_SECRET"
+            android:value="d7etjfpchq3xnuxju33kndhs49jte8v4" />
+        <activity android:name="com.gantch.www.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+</manifest>
